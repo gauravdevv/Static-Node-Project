@@ -1,0 +1,485 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Basic</h3>
+    <a href="/">Home</a>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stick{
+    position: sticky;
+    top: 0;
+}
+
+header{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 1.2%; */
+    background-color: #82c0cc;
+   
+}
+ /* img{
+   height: 60px;
+   width: 60px;
+   border-radius: 35px;
+} */
+
+
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-items ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+
+}
+
+li a.active{
+    background-color: #023e8a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h4{
+    font-size: 20px;
+    color: #fff;
+    /* margin-left: -6%; */
+}
+
+.search_box input[type=text]{
+    font-size: 20px;
+    border-color: #023e8a;
+    border-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.icons a{
+    font-size: 15px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+nav{
+
+    /* display: flex;
+    padding: 0.2% 6%;
+    justify-content: space-between;
+    align-items: center; */
+    background-color: #023e8a;
+    /* position: sticky;
+    top: 0; */
+
+
+}
+
+.items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.items ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#ic{
+    font-size: 25px;
+    color: #fff;
+}
+
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 10px;
+
+
+}
+
+.sideleft{
+    text-decoration: none;
+    height: 1200px;
+    width: 20%;
+    background-color:#90e0ef;
+    float: left;
+
+}
+
+.sideleft a.active{
+    background-color: #023e8a;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+.main{
+    width: 55.5%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+
+.sideright{
+    height: 1200px;
+    width: 20%;
+    background-color: #90e0ef;
+    float: left;
+}
+
+.sideright h4{
+    text-align: center;
+}
+
+.sideright video{
+    width: 250px;
+    height: 100px;
+    margin-top: 20%;
+}
+
+.footer{
+    clear: both;
+    background-color: #023e8a;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.sideleft h4{
+    font-size: 20px;
+    text-align: center;
+    background-color: #48cae4;
+    color: black;
+    border-radius: 10px;
+}
+
+.sideleft a {
+    
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+  }
+
+  .sideleft ::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fff;
+    transition: 0.4s
+}
+
+.sideleft :hover::after{
+    width: 100%;
+}
+
+.sideleft i{
+    padding-right: 4px;
+}
+
+.main h1{
+    text-align: center;
+}
+
+.content{
+    margin-top: 10%;
+    font-size: 15px;
+}
+
+.content h3{
+    font-size: 20px;
+}
+
+.content p{
+    margin-top: 1.3%;
+
+}
+
+#box{
+    background-color: #caf0f8;
+    border-radius: 0.3cm;
+    padding: 4px 35px;
+    color: #fe0000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.container p{
+    margin-top: 1.3%;
+}
+
+
+span{
+    color: black;
+}
+
+#bt{
+    float: right;
+    margin-top: 4%;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+
+#btn{
+    float: right;
+    margin-top: 19%;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+
+.btnp{
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color:#023e8a;
+    color: white;
+}
+
+.btn{
+    float: right;
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h4>Welcome To My World</h4>
+
+        <div class="search_box">
+            <input type="text" name="search" placeholder="Search here..." >
+            <!-- <span class="fa fa-search" ></span> -->
+        </div>
+
+
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            
+        </div>
+        
+        <div class="nav-items">
+            <ul>
+            <li><a href="/home">Home</a></li>
+            <li><a href="/html_home">HTML 5</a></li>
+            <li><a href="">CSS 3</a></li>
+        </ul>
+        </div>
+    </header>
+        
+    
+        <nav>
+    
+                <a id="ic" href="./home.html"><i class="fa-solid fa-house"></i></a>
+            
+            <div class="items">
+                <ul>
+                    <li><a href="/html_home">Html</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">Boostrap</a></li>
+                    <li><a href="">JQuery</a></li>
+                    <li><a href="">Python</a></li>
+                    <li><a href="">SQL</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">C++</a></li>
+                    <li><a href="">C#</a></li>
+                    <li><a href="">NodeJS</a></li>
+                    <li><a href="">MySQL</a></li>
+                    <li><a href="">React</a></li>
+                    <li><a href="">AngularJS</a></li>
+                    <li><a href="">JSON</a></li>
+                    <li><a href="">XML</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- ----------------------------------------------------------------------- -->
+
+        <div class="wrapper">
+
+            <div class="sideleft">
+                <h4>HTML</h4>
+                
+                    <a href="/html_home"><i class="fa-solid fa-arrow-right"></i>HTML Home</a>
+                    <a href="/html_editor">HTML Editors</a>
+                    <a class="active" href="/html_basic">HTML Basic</a>
+                    <a href="/html_tags">HTML Tags</a>
+                    <a href="/html_text">HTML Text Formating</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                
+        
+            </div>
+
+            <div class="main">
+                <h1>HTML Basics</h1>
+                <div>
+                    <a href="/html_editor"><button style="margin-top: 10%;" class="btnp" >❮ Previous</button></a>
+                    <a href="/html_tags"><button style="margin-top: 10%;" class="btn" >Next ❯</button></a>
+                </div>
+                <div class="content">
+                    <p>In this chapter we will show some basic HTML examples.
+
+                     <p>
+                        Don't worry if we use tags you have not learned about yet.
+                     </p>   
+                    </p>
+                    <br>
+
+                    <h3>HTML Documents</h3>
+                    <br>
+
+                    <p>
+                        All HTML documents must start with a document type declaration: &lt!DOCTYPE html&gt.
+                    </p>
+                    <p>
+                        The HTML document itself begins with &lthtml&gt and ends with &lt/html&gt.
+                    </p>
+                    <p>
+                        The visible part of the HTML document is between &ltbody&gt and &lt/body&gt.
+                    </p>
+                    <br><br>
+
+                    <h3>Example</h3>
+                    <br><br>
+                    <p id="box" >
+                        &lt!DOCTYPE html&gt <br>
+                        &lthtml&gt <br>
+                        &ltbody&gt <br>
+                        &lth1&gt <span> My First Heading</span>&lt/h1&gt <br>
+                        &ltp&gt <span> My first paragraph.</span>&lt/p&gt <br>
+                        &lt/body&gt <br>
+                        &lt/html&gt <br>
+                    </p>
+                    <br>
+                    <br>
+
+                    <h2>The &lt!DOCTYPE &gt Declaration</h2>
+                    <p>
+                        The &lt!DOCTYPE &gt declaration represents the document type, and helps browsers to display web pages correctly. <br> <br>
+
+                        It must only appear once, at the top of the page (before any HTML tags). <br> <br>
+
+                        The &lt!DOCTYPE &gt declaration is not case sensitive. <br> <br>
+
+                        The &lt!DOCTYPE &gt declaration for HTML5 is:
+                    </p>
+                    <br><br>
+
+                    <p id="box">
+                        &lt!DOCTYPE html &gt
+                    </p>
+                    <br><br>
+
+                    <h2>HTML Headings</h2>
+                    <br>
+
+                    <p>
+                        HTML headings are defined with the &lth1&gt to &lth6&gt tags. 
+                        <br><br>
+
+                        &lth1&gt defines the most important heading. &lth6&gt defines the least important heading: 
+                    </p>
+
+
+                </div>
+
+
+
+
+
+                <div>
+                    <a href="/_editor"><button style="margin-top: 10%;" class="btnp" >❮ Previous</button></a>
+                    <a href="/html_tags"><button style="margin-top: 10%;" class="btn" >Next ❯</button></a>
+                </div>
+
+            </div>
+
+            <div class="sideright">
+                <h4>Advertisment</h4>
+    <video loop autoplay muted>
+        <source src="./assets/Pexels Videos 2235742.mp4" type="video/mp4"></video>
+
+        <video loop autoplay muted>
+            <source src="./assets/pexels-kindel-media-7770399.mp4" type="video/mp4">
+        </video>
+            </div>
+<div class="footer">footer</div>
+
+</div>
+
+
+</body>
+</html>

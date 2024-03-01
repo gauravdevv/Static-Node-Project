@@ -1,0 +1,461 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>Editor</h3>
+    <a href="/">Home</a>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stick{
+    position: sticky;
+    top: 0;
+}
+
+header{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 1.2%; */
+    background-color: #82c0cc;
+   
+}
+ /* img{
+   height: 60px;
+   width: 60px;
+   border-radius: 35px;
+} */
+
+
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-items ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+
+}
+
+li a.active{
+    background-color: #023e8a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h4{
+    font-size: 20px;
+    color: #fff;
+    /* margin-left: -6%; */
+}
+
+.search_box input[type=text]{
+    font-size: 20px;
+    border-color: #023e8a;
+    border-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.icons a{
+    font-size: 15px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+nav{
+
+    /* display: flex;
+    padding: 0.2% 6%;
+    justify-content: space-between;
+    align-items: center; */
+    background-color: #023e8a;
+    /* position: sticky;
+    top: 0; */
+
+
+}
+
+.items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.items ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#ic{
+    font-size: 25px;
+    color: #fff;
+}
+
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 10px;
+
+
+}
+
+.sideleft{
+    text-decoration: none;
+    height: 1200px;
+    width: 20%;
+    background-color:#90e0ef;
+    float: left;
+
+}
+
+.sideleft a.active{
+    background-color: #023e8a;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+.main{
+    width: 55.5%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+
+.sideright{
+    height: 1200px;
+    width: 20%;
+    background-color: #90e0ef;
+    float: left;
+}
+
+.sideright h4{
+    text-align: center;
+}
+
+.sideright video{
+    width: 250px;
+    height: 100px;
+    margin-top: 20%;
+}
+
+.footer{
+    clear: both;
+    background-color: #023e8a;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.sideleft h4{
+    font-size: 20px;
+    text-align: center;
+    background-color: #48cae4;
+    color: black;
+    border-radius: 10px;
+}
+
+.sideleft a {
+    
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+  }
+
+  .sideleft ::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fff;
+    transition: 0.4s
+}
+
+.sideleft :hover::after{
+    width: 100%;
+}
+
+.sideleft i{
+    padding-right: 4px;
+}
+
+.main h1{
+    text-align: center;
+}
+
+.content{
+    margin-top: 10%;
+    font-size: 15px;
+}
+
+.content h3{
+    font-size: 20px;
+}
+
+.content p{
+    margin-top: 1.3%;
+
+}
+
+#box{
+    background-color: #caf0f8;
+    border-radius: 0.3cm;
+    padding: 4px 35px;
+    color: #fe0000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.container p{
+    margin-top: 1.3%;
+}
+
+
+span{
+    color: black;
+}
+
+#bt{
+    float: right;
+    margin-top: 4%;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+
+#btn{
+    float: right;
+    margin-top: 19%;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+
+.btnp{
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color:#023e8a;
+    color: white;
+}
+
+.btn{
+    float: right;
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <header>
+
+        <h4>Welcome To My World</h4>
+
+        <div class="search_box">
+            <input type="text" name="search" placeholder="Search here..." >
+            <!-- <span class="fa fa-search" ></span> -->
+        </div>
+
+
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            
+        </div>
+        
+        <div class="nav-items">
+            <ul>
+            <li><a href="/">Home</a></li>
+            <li><a class="active" href="">HTML 5</a></li>
+            <li><a href="/404">CSS 3</a></li>
+        </ul>
+        </div>
+    </header>
+        
+    
+        <nav>
+    
+                <a id="ic" href="/html_home"><i class="fa-solid fa-house"></i></a>
+            
+            <div class="items">
+                <ul>
+                    <li><a href="/html_home">Html</a></li>
+                    <li><a href="/404">CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">Boostrap</a></li>
+                    <li><a href="">JQuery</a></li>
+                    <li><a href="">Python</a></li>
+                    <li><a href="">SQL</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">C++</a></li>
+                    <li><a href="">C#</a></li>
+                    <li><a href="">NodeJS</a></li>
+                    <li><a href="">MySQL</a></li>
+                    <li><a href="">React</a></li>
+                    <li><a href="">AngularJS</a></li>
+                    <li><a href="">JSON</a></li>
+                    <li><a href="">XML</a></li>
+                </ul>
+            </div>
+        </nav>
+        <!----- -------------------------------------------------------------------------- -->
+
+        <div class="wrapper">
+
+            <div class="sideleft">
+                <h4>HTML</h4>
+                
+                    <a href="/html_home"><i class="fa-solid fa-arrow-right"></i>HTML Home</a>
+                    <a class="active" href="/html_editor">HTML Editors</a>
+                    <a href="/html_basic">HTML Basic</a>
+                    <a href="/html_tags">HTML Tags</a>
+                    <a href="/html_text">HTML Text Formating</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                    <a href="#">Course</a>
+                
+        
+            </div>
+
+            <div class="main">
+                <h1>HTML Editors</h1>
+
+                <div>
+                    <a href="/html_home"><button style="margin-top: 5%;" class="btnp" >❮ Previous</button></a>
+                    <a href="/html_basic"><button style="margin-top: 5%;" class="btn" >Next ❯</button></a>
+                </div>
+                <div class="content">
+
+                    <h5>A simple text editor is all you need to learn HTML.</h5>
+                    <br><br>
+				<h3>Learn HTML Using Notepad or TextEdit</h3>
+                <br>
+				<p>
+					Web pages can be created and modified by using professional HTML editors.
+                    <br>
+					However, for learning HTML we recommend a simple text editor like Notepad (PC) or TextEdit (Mac).
+                    <br>
+					We believe in that using a simple text editor is a good way to learn HTML.
+                    <br>
+					Follow the steps below to create your first web page with Notepad or TextEdit.
+                    <br>
+				</p>
+                <br><br>
+				<h3>Step 1: Open Notepad (PC)</h3>
+                <br>
+				<p>	<b>Windows 8 or later:</b></p>
+				<p> Open the <b>Start Screen</b> (the window symbol at the bottom left on your screen). Type <b>Notepad.</b></p><br>
+				<p><b>Windows 7 or earlier:</b></p>
+				<p>Open <b>Start > Programs > Accessories > Notepad</b></p>
+                <br>
+				<h3>Step 1: Open TextEdit (Mac)</h3>
+                <br>
+				<p>Open <b>Finder > Applications > TextEdit</b></p>
+				<P>Also change some preferences to get the application to save files correctly. In <b>Preferences > Format ></b> choose <b>"Plain Text"</b></P>
+				<p>Then under "Open and Save", check the box that says "Display HTML files as HTML code instead of formatted text".</p>
+				<p><b>Then open a new document to place the code.</b></p><br><br>
+				<h3>Step 2: Write Some HTML</h3><br>
+				<p>Write any HTML code into Notepad</p><br><br>
+				<h3>Step 3: Save the HTML Page</h3><br>
+				<p>Save the file on your computer. Select <b>File > Save as</b> in the Notepad menu.</p>
+				<p>Name the file <b>"index.htm"</b> and set the encoding to <b>UTF-8</b> (which is the preferred encoding for HTML files).</p>
+				<p><b>Tip:</b> You can use either .htm or .html as file extension. There is no difference, it is up to you.</p><br><br>
+				<h3>Step 4: View the HTML Page in Your Browser</h3><br>
+				<p>Open the saved HTML file in your favorite browser (double click on the file, or right-click - and choose "Open with").</p>
+                
+                <br><br>
+
+                </div>
+
+                <div>
+                    <a href="/html_home"><button class="btnp" >❮ Previous</button></a>
+                    <a href="/html_basic"><button class="btn" >Next ❯</button></a>
+                </div>
+
+
+
+            </div>
+            <div class="sideright">
+                <h4>Advertisment</h4>
+    <video loop autoplay muted>
+        <source src="./assets/Pexels Videos 2235742.mp4" type="video/mp4"></video>
+
+        <video loop autoplay muted>
+            <source src="./assets/pexels-kindel-media-7770399.mp4" type="video/mp4">
+        </video>
+            </div>
+<div class="footer">footer</div>
+
+        </div>
+
+
+
+    </body>
+</html>

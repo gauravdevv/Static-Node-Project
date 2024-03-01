@@ -1,0 +1,474 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <a href="/">Home</a>
+    <h1>Welcome to HTml home page page</h1>
+   
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcmoe To My World</title>
+    <link rel="shortcut icon" href="./assets/code.png" type="image/x-icon">
+    <!-- <link rel="stylesheet" href="home.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.stick{
+    position: sticky;
+    top: 0;
+}
+
+header{
+    display: flex;
+    padding: 1% 6%;
+    justify-content: space-around;
+    align-items: center;
+    /* margin-bottom: 1.2%; */
+    background-color: #82c0cc;
+   
+}
+ /* img{
+   height: 60px;
+   width: 60px;
+   border-radius: 35px;
+} */
+
+
+.nav-items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-items ul li a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #fff;
+
+}
+
+li a.active{
+    background-color: #023e8a;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+h4{
+    font-size: 20px;
+    color: #fff;
+    /* margin-left: -6%; */
+}
+
+.search_box input[type=text]{
+    font-size: 20px;
+    border-color: #023e8a;
+    border-color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.icons a{
+    font-size: 15px;
+    padding: 0 10px;
+    color: #fff;
+}
+
+nav{
+
+    /* display: flex;
+    padding: 0.2% 6%;
+    justify-content: space-between;
+    align-items: center; */
+    background-color: #023e8a;
+    /* position: sticky;
+    top: 0; */
+
+
+}
+
+.items ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.items ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+#ic{
+    font-size: 25px;
+    color: #fff;
+}
+
+.wrapper > *{
+    padding: 10px;
+    margin: 10px;
+    
+    border-radius: 10px;
+
+
+}
+
+.sideleft{
+    text-decoration: none;
+    height: 1200px;
+    width: 20%;
+    background-color:#90e0ef;
+    float: left;
+
+}
+
+.sideleft a.active{
+    background-color: #023e8a;
+    color: #fff;
+    border-radius: 10px;
+    
+}
+
+.main{
+    width: 55.5%;
+    height: 100%;
+    background-color: white;
+    float: left;
+}
+
+.sideright{
+    height: 1200px;
+    width: 20%;
+    background-color: #90e0ef;
+    float: left;
+}
+
+.sideright h4{
+    text-align: center;
+}
+
+.sideright video{
+    width: 250px;
+    height: 100px;
+    margin-top: 20%;
+}
+
+.footer{
+    clear: both;
+    background-color: #023e8a;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: white;
+}
+
+
+
+.sideleft h4{
+    font-size: 20px;
+    text-align: center;
+    background-color: #48cae4;
+    color: black;
+    border-radius: 10px;
+}
+
+.sideleft a {
+    
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    display: block;
+  }
+
+  .sideleft ::after{
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: #fff;
+    transition: 0.4s
+}
+
+.sideleft :hover::after{
+    width: 100%;
+}
+
+.sideleft i{
+    padding-right: 4px;
+}
+
+.main h1{
+    text-align: center;
+}
+
+.content{
+    margin-top: 10%;
+    font-size: 15px;
+}
+
+.content h3{
+    font-size: 20px;
+}
+
+.content p{
+    margin-top: 1.3%;
+
+}
+
+#box{
+    background-color: #caf0f8;
+    border-radius: 0.3cm;
+    padding: 4px 35px;
+    color: #fe0000;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    
+}
+
+.container p{
+    margin-top: 1.3%;
+}
+
+
+span{
+    color: black;
+}
+
+#bt{
+    float: right;
+    margin-top: 4%;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+
+#btn{
+    float: right;
+    margin-top: 19%;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+
+.btnp{
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color:#023e8a;
+    color: white;
+}
+
+.btn{
+    float: right;
+    margin-top: 0;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 0.2cm;
+    background-color: #023e8a;
+    color: white;
+}
+    </style>
+</head>
+<body>
+    <div class="stick">
+
+
+    <header>
+        <!-- <a href=""><img src="./assets/FB_IMG_1535550604628.jpg" alt=""></a> -->
+
+        <h4>Welcome To My World</h4>
+
+        <div class="search_box">
+            <input  type="text" name="search" placeholder="Search here..." >
+            <!-- <span class="fa fa-search" ></span> -->
+        </div>
+
+
+        <div class="icons">
+            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+            <a href=""><i class="fa-brands fa-instagram"></i></a>
+            <a href=""><i class="fa-brands fa-twitter"></i></a>
+            <a href=""><i class="fa-brands fa-youtube"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+            
+        </div>
+        
+        <div class="nav-items">
+            <ul>
+            <li><a href="/">Home</a></li>
+            <li><a class="active" href="">HTML 5</a></li>
+            <li><a href="">CSS 3</a></li>
+        </ul>
+        </div>
+    </header>
+        
+    
+        <nav>
+    
+                <!-- <a id="ic" href="./home.html"><i class="fa-solid fa-house"></i></a> -->
+            
+            <div class="items">
+                <ul>
+                    <li><a href="">Html</a></li>
+                    <li><a href="">CSS</a></li>
+                    <li><a href="">JavaScript</a></li>
+                    <li><a href="">Boostrap</a></li>
+                    <li><a href="">JQuery</a></li>
+                    <li><a href="">Python</a></li>
+                    <li><a href="">SQL</a></li>
+                    <li><a href="">PHP</a></li>
+                    <li><a href="">Java</a></li>
+                    <li><a href="">C++</a></li>
+                    <li><a href="">C#</a></li>
+                    <li><a href="">NodeJS</a></li>
+                    <li><a href="">MySQL</a></li>
+                    <li><a href="">React</a></li>
+                    <li><a href="">AngularJS</a></li>
+                    <li><a href="">JSON</a></li>
+                    <li><a href="">XML</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+<!-- ------------------------------------------------------------------------------------------ -->
+
+<div class="wrapper">
+
+    <div class="sideleft">
+        <h4>HTML</h4>
+        
+			<a class="active" href=""><i class="fa-solid fa-laptop-code"></i>Html Home</a>
+			<a  href="/html_editor"><i class="fa-solid fa-laptop-code"></i>Html Editors</a>
+			<a href="/html_basic"><i class="fa-solid fa-laptop-code"></i>Html Basic</a>
+			<a href="/html_tags"><i class="fa-solid fa-laptop-code"></i>Html Tags</a>
+			<a href="/html_text"><i class="fa-solid fa-laptop-code"></i>Html Text Formating</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<a href="#"><i class="fa-solid fa-laptop-code"></i>Course</a>
+			<!-- <a href="#"><i class="fa-solid fa-arrow-right"></i></a> -->
+			<!-- <a href="#">Course</a> -->
+		
+
+    </div>
+<div class="main">
+    <h1>HTML Home</h1>
+    
+    <div>
+        <a href="/html_editor"><button style="margin-top: 4%;" id="bt" >Next ❯</button></a>
+    </div>
+
+    <div class="content">
+        
+        <h3>What is HTML?</h3>
+				<p>	HTML stands for Hyper Text Markup Language<br>
+					HTML is the standard markup language for creating Web pages<br>
+					HTML describes the structure of a Web page<br>
+					HTML consists of a series of elements<br>
+					HTML elements tell the browser how to display the content<br>
+					HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.
+				</p><br><br>
+
+				<h3>A Simple HTML Document</h3>
+
+                <div class="container">
+
+                    <p id="box" >
+                        &lt!DOCTYPE html&gt<br>
+						&lthtml&gt<br>
+						&lthead&gt<br>
+						&lttitle&gt <span> Page Title </span> &lt/title&gt<br>
+						&lt/head&gt<br>
+						&ltbody&gt<br>
+						&lth1&gt <span> My First Heading</span> &lt/h1&gt<br>
+						&ltp&gt <span> My First Paragraph</span> &ltp&gt<br>
+						&lt/body&gt<br>
+						&lt/html&gt<br>
+                    </p>
+
+                </div>
+
+                <br><br>
+
+				<h3>Applications of HTML</h3>
+				<p>
+					As mentioned before, HTML is one of the most widely used language over the web. I'm going to list few of them here:<br><br>
+					<b>Web pages development - </b>HTML is used to create pages which are rendered over the web. Almost every page of web is having html tags in it to render its details in browser.<br>
+					<b>Internet Navigation - </b>HTML provides tags which are used to navigate from one page to another and is heavily used in internet navigation.<br>
+					<b>Responsive UI - </b>HTML pages now-a-days works well on all platform, mobile, tabs, desktop or laptops owing to responsive design strategy.<br>
+					<b>Offline support - </b>HTML pages once loaded can be made available offline on the machine without any need of internet.<br>
+					<b>Game development - </b>HTML5 has native support for rich experience and is now useful in gaming developent arena as well.<br>
+				</p><br><br>
+
+                <h3>Audience</h3>
+				<p>
+					This <b>HTML tutorial</b> is designed for the aspiring Web Designers and Developers with a need to understand the HTML in enough detail along with its simple overview, and practical examples. This tutorial will give you enough ingredients to start with HTML from where you can take yourself at higher level of expertise.
+				</p><br><br>
+
+    </div>
+
+    <div>
+        <a href="/html_editor"><button id="btn" >Next ❯</button></a>
+    </div>
+
+
+
+</div>
+<div class="sideright">
+    <h4>Advertisment</h4>
+    <video loop autoplay muted>
+        <source src="/vid/Pexels Videos 2235742.mp4" type="video/mp4"></video>
+
+        <video loop autoplay muted>
+            <source src="/vid/pexels-kindel-media-7770399.mp4" type="video/mp4">
+        </video>
+
+
+</div>
+<div class="footer">
+    Flana dhimkana
+</div>
+
+
+
+</body>
+</html>
